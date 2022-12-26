@@ -14,7 +14,7 @@ namespace Name
         public static string GenerateNameWarrior(string[] WarriorName)
         {
             Random rnd = new Random();
-            int value = rnd.Next(0, 6);
+            int value = rnd.Next(0, 5);
             return WarriorName[value];
         }
     }

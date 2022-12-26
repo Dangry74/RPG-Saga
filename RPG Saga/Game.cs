@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace RPG_Saga
 {
-    using Artefact;
     using Class;
     using Name;
 
@@ -94,26 +93,11 @@ namespace RPG_Saga
 
             Generate1();
             Generate2();
-
-            Console.WriteLine("Базовые характеристики:");
             Console.WriteLine($"{Player1.Name}\t vs \t{Player2.Name}");
             Console.WriteLine($"{Player1.Attack} атаки \t{Player2.Attack} атаки");
             Console.WriteLine($"{Player1.Defence} защиты \t{Player2.Defence} защиты");
             Console.WriteLine($"{Player1.Health} здоровья \t{Player2.Health} здоровья");
             Console.WriteLine($"{Player1.Mana} Маны \t\t{Player2.Mana} Маны\n");
-
-            Artefact.UpCharacteristic(Player1, Player1.Attack, Player1.Defence, Player1.Health, Player1.Mana);
-            Artefact.UpCharacteristic(Player2, Player2.Attack, Player2.Defence, Player2.Health, Player2.Mana);
-
-            Console.WriteLine("\t");
-
-            Console.WriteLine("Характеристики с учётом артефактов:");
-            Console.WriteLine($"{Player1.Name}\t vs \t{Player2.Name}");
-            Console.WriteLine($"{Player1.Attack} атаки \t{Player2.Attack} атаки");
-            Console.WriteLine($"{Player1.Defence} защиты \t{Player2.Defence} защиты");
-            Console.WriteLine($"{Player1.Health} здоровья \t{Player2.Health} здоровья");
-            Console.WriteLine($"{Player1.Mana} Маны \t\t{Player2.Mana} Маны\n");
-
 
             while ((Player1.Health > 0) && (Player2.Health > 0))
             {

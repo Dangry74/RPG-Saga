@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Class
 {
+    using Name;
     internal class Mage: IPlayers
     {
         public string Name { get; set; }
