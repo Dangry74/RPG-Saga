@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Class
 {
-    using Name;
     public class Archer : IPlayers
     {
         public string Name { get; set; }
