@@ -105,7 +105,7 @@ namespace RPG_Saga
             Artefact.UpCharacteristic(Player1, Player1.Attack, Player1.Defence, Player1.Health, Player1.Mana);
             Artefact.UpCharacteristic(Player2, Player2.Attack, Player2.Defence, Player2.Health, Player2.Mana);
 
-            Console.WriteLine("\t");
+            Console.WriteLine("\t ");
 
             Console.WriteLine("Характеристики с учётом артефактов:");
             Console.WriteLine($"{Player1.Name}\t vs \t{Player2.Name}");
