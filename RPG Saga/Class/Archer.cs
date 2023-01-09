@@ -13,14 +13,16 @@ namespace Class
         public float Defence { get; set; }
         public float Health { get; set; }
         public float Mana { get; set; }
+        public bool Skil { get; set; }
 
-        public Archer(string archName, float archAttack, float archDefence, float archHealth, float archMana)
+        public Archer(string archName, float archAttack, float archDefence, float archHealth, float archMana, bool skil)
         {
             Name = archName;
             Attack = archAttack;
             Defence = archDefence;
             Health = archHealth;
             Mana = archMana;
+            Skil = skil;
         }
     }
 }

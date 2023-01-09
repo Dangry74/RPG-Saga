@@ -13,5 +13,6 @@ namespace Class
         float Defence { get; set; }
         float Health { get; set; }
         float Mana { get; set; }
+        bool Skil { get; set; }
     }
 }
